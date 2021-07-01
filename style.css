@@ -1,8 +1,12 @@
 #main__home {
     background-image: url(./imgs/background-1.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,17 +35,19 @@
 
 .nav__manu > div {
     margin: 0 1em;
+    padding: 0.5em;
+    flex-shrink: 1;
 }
 
 .nav__manu > div:hover {
-    border: 2px solid white;
-    padding: 0.2em;
+    background-color: white;
+    color: #A7E9A5;
 }
 
 #main__home__container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 #home__pic img {
@@ -49,7 +55,7 @@
     border: 2px solid white;
     height: 25em;
     width: 25em;
-    margin: 1em;
+    margin: 2em;
 }
 
 #home__text {
@@ -84,6 +90,6 @@
 }
 
 #button--contact:hover {
-    border: 2px solid white;
-    padding: 0.2em;
+    background-color: white;
+    color: #A7E9A5;
 }
