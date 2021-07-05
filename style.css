@@ -14,23 +14,23 @@
     --color-yellow: #fff7da;
     --color-orange: #feb546;
 
-    /* Font size */
+/* Font size */
     --font-large: 48px;
     --font-medium: 28px;
     --font-regular: 18px;
     --font-smal: 16px;
     --font-micro: 14px;
 
-    /* Font weight */
+/* Font weight */
     --weight-bold: 700;
     --weight-semi-bold: 600;
     --weight-regular: 400;
 
-    /* Size */
+/* Size */
     --size-border-radius: 0.5em;
 }
 
-    /* Universal tags  */
+/* Universal tags  */
 * {
     box-sizing: border-box;
 }
@@ -51,7 +51,14 @@ ul {
     list-style: none;
 }
 
-    /* Typography */
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* Typography */
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
@@ -124,9 +131,7 @@ p{
 
 
 
-
-
-
+/* Home */
 #main__home {
     background-image: url(./imgs/background-1.png);
     display: flex;
@@ -144,45 +149,45 @@ p{
 
 #home__pic img {
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--color-light-white);
     height: 25em;
     width: 25em;
     margin: 2em;
 }
 
 #home__text {
-    color: white;;
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-left: 4em;
 }
 
 #home__text > div:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 3.5em;
+    font-size: var(--font-large);
     font-weight: bold;
     margin-bottom: 0.2em;
 }
 
 #home__text > span {
-    font-size: 2em;
+    font-size: var(--font-medium);
     font-weight: bold;
 }
 
-#button--contact {
-    border: none;
-    background: none;
+.home__contact {
     padding: 0.3em;
-    color: white;
+    color: var(--color-white);
     margin: 2em;
     font-size: 2em;
     font-weight: bold;
 }
 
-#button--contact:hover {
-    background-color: white;
+.home__contact:hover {
+    background-color: var(--color-white);
     color: var(--color-green);
+    border-radius: var(--size-border-radius);
 }
