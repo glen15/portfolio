@@ -240,3 +240,27 @@ p{
 .major__description {
     font-size: var(--font-small);
 }
+
+.about__log {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.log {
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    
+}
+.log__title {
+    font-weight: var(--weight-semi-bold);
+    font-size: var(--font-regular);
+    color: var(--color-blue);
+    width: 30%;
+}
+
+.log__period {
+    color: var(--color-light-grey);
+    font-size: var(--font-micro);
+}
